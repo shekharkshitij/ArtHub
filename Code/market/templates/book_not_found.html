@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ae260755;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+        }
+        .message {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .message strong {
+            color: #007bff;
+        }
+        @media screen and (max-width: 768px) {
+            .message {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Art Not Found</h1>
+    <div class="message">
+        <p>The art<strong>{{ book_name }}</strong> is not found.</p>
+        <p>Please try searching for another art.</p>
+    </div>
+</body>
+</html>
